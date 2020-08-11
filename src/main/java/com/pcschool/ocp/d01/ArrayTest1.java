@@ -20,7 +20,7 @@ public class ArrayTest1 {
         // 求標準差        
         double sum2 = 0;
         for(int i=0;i<scores.length;i++){
-            sum2 += Math.pow(scores[i] - avg, 2);
+            sum2 += Math.pow(scores[i] - avg, 2); // (Xi - avg)的平方再加總
         }
         double sd = Math.sqrt((1.0/scores.length)*sum2);
         System.out.printf("標準差: %.2f\n", sd);
