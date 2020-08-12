@@ -7,7 +7,7 @@ public class JavaGame {
         menu(); // 主程式一行結束 => Perfect!
     }
     
-    public static void menu() {
+    public static void menu() { // 主選單介面
         while(true) {
             System.out.println("Java Game");
             System.out.println("---------------");
@@ -32,12 +32,13 @@ public class JavaGame {
         }
     }
     
-    public static void englishgameloop() {
+    public static void englishgameloop() { // 英文字母遊戲
         English english = new English();
         while (true) {
             Scanner sc = new Scanner(System.in);
             System.out.print("請輸入英文字母: ");
-            int userAns = sc.next().toUpperCase().charAt(0); //
+            int userAns = sc.next().toUpperCase().charAt(0); 
+                                   // 自動轉大寫    //檢查字串的第幾位字元
             int result = english.check(userAns);
             if (result == 0) {
                 System.out.println("恭喜答對了!");
@@ -49,7 +50,7 @@ public class JavaGame {
         }
     }
     
-    public static void numbergameloop() {
+    public static void numbergameloop() { // 數字遊戲
         Number number = new Number();
         while (true) {
             Scanner sc = new Scanner(System.in);
