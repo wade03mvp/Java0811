@@ -12,6 +12,9 @@ public class BubbleSort {
                     x[i + 1] = a;
                 }
             }
-        }   
+        }
+        for(int num : x) {
+            System.out.print(num + " ");
+        }
     }    
 }
