@@ -29,7 +29,6 @@ public class Food {
         this.amount = amount;
     }
      
-    @Override
     public String toString() {
         return "Food{" + "amount=" + amount + ", price=" + price + '}';
     } 
