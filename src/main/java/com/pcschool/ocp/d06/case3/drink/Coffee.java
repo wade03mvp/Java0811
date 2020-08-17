@@ -9,7 +9,7 @@ public class Coffee extends Drink {
         // 組合飲料原料
         Bean bean = new Bean();
         Milk milk = new Milk();
-        addMaterial(bean).addMaterial(milk);   
+        addMaterial(bean).addMaterial(milk); // 累加素材   
     }
 }
  
