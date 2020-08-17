@@ -10,7 +10,8 @@ public class DrinkStore {
         
         GreenPearlTea greenPearlTea = new GreenPearlTea();
         System.out.println(greenPearlTea.getPrice());
-        System.out.println("成分: ");
+        
+        System.out.println("成分: "); // 印出所有成分與成本
         greenPearlTea.getMaterials()
                 .stream()
                 .forEach(m -> {
