@@ -1,5 +1,6 @@
-package com.pcschool.ocp.d06.case2;
+package com.pcschool.ocp.d06.case2.employee;
 
+import com.pcschool.ocp.d06.case2.employee.Employee;
 import com.pcschool.ocp.d06.case2.salary.SalesSalary;
 
 public class Sales extends Employee {
@@ -8,4 +9,5 @@ public class Sales extends Employee {
         SalesSalary salesSalary = new SalesSalary();
         setSalary(salesSalary);
     }
+
 }
