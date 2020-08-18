@@ -38,7 +38,15 @@ public class Food {
     }
 
     public Food addMaterial(Material material) {
-        return null;
+        Material[] new_materials = new Material[materials.length + 1]; // 創立一個新陣列
+        /*for(int i=0;i<new_materials.length-1;i++){   // 舊的陣列物件帶入
+            new_materials[i] = materials[i];
+        }*/
+        // 來源陣列,來源陣列起始位置,目的陣列,目的陣列起始位置,資料長度
+        System.arraycopy(materials, 0, new_materials, 0, materials.length); // 陣列複製
+        new_materials[new_materials.length-1] = material; // 新陣列的最後一格,放入新素材
+        setMaterials(new_materials); // 素材帶入
+        return this;
     }
 
 }
