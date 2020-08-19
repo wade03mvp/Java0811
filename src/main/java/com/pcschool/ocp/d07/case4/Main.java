@@ -20,7 +20,7 @@ public class Main {
         // 請問所有 Programmer 總薪資? 平均薪資? 最高? 最低?        
         IntSummaryStatistics stat = Arrays.stream(programmers)
                 .mapToInt(p -> p.getSalary())
-                .summaryStatistics(); // 取得所有陣列的統計資料
+                .summaryStatistics(); // 取得所有 薪水 int p陣列 的統計資料
         System.out.printf("總薪資: %,d 平均: %,.1f 最高: %,d 最低 %,d\n",
                 stat.getSum(), stat.getAverage(), stat.getMax(), stat.getMin());
         // Java 平均? php 平均? 男 平均? 女 平均?
