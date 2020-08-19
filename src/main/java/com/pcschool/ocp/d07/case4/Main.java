@@ -47,6 +47,5 @@ public class Main {
                 .mapToInt(p -> p.getSalary())
                 .summaryStatistics().getAverage(); 
         System.out.printf("女性平均薪資: %,.1f\n", fAvg);
-    }
-    
+    }  
 }
