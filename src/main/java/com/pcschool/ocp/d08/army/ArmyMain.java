@@ -27,7 +27,7 @@ public class ArmyMain {
         // Java8 : cars 要統一發射武器
         Arrays.stream(cars)
                 .filter(c -> c instanceof Weapon) // 過濾出 cars 包含 Weapon 的元素 (還是 Car 型別)
-                .map(c -> (Weapon)c)   // cars 轉型成 Weapon
+                .map(c -> (Weapon)c)   // cars 轉型成 Weapon => 這樣才有 shoot()
                 .forEach(c -> c.shoot());
         // Java8 : weapons 要統一發射武器
         Arrays.stream(weapons).forEach(w -> w.shoot());           
