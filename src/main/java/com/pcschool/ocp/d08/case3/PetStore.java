@@ -19,7 +19,7 @@ public class PetStore {
         
         // 寵物的腿數共有幾隻?
         //int amount = pets.length;
-        long amount = Arrays.stream(pets).count(); // count() => 計算有多少元素
+        long amount = Arrays.stream(pets).count(); // count() => 計算陣列中有多少元素
         System.out.println(amount * Pet.legs);
     }
     
