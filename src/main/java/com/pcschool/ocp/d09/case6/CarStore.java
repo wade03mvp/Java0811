@@ -20,6 +20,7 @@ public class CarStore {
         
         // Lambda ::
         Rideable ride3 = Car::new;
+        System.out.println(ride3);
         Car car3 = ride3.getCar("BMW");
         System.out.println(car3);
     }
