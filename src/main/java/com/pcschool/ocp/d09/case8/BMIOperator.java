@@ -34,7 +34,7 @@ public class BMIOperator {
         System.out.println(du.applyAsDouble(0.0));
         
         // ObjIntConsumer 用法
-        class Exam {
+        class Exam {     // 內部類別
             int chinese;
             int english;
         }
