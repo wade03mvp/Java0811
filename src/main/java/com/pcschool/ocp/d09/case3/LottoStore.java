@@ -5,7 +5,7 @@ import java.util.Random;
 public class LottoStore {
     public static void main(String[] args) {
         Lotto one = new Lotto() {  // 匿名內部類別(開始)
-            @Override
+            @Override  // 重新定義介面的方法
             public void printNumber() {
                 System.out.printf("%d\n", new Random().nextInt(10));
             }
