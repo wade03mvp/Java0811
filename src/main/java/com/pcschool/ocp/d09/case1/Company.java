@@ -8,7 +8,6 @@ public class Company {
         job.program();
         job.meeting();
         
-        Employee.Study study = emp.new Study();
-        study.read();
+        
     } 
 }

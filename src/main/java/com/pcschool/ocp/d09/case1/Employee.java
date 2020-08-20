@@ -11,6 +11,9 @@ public class Employee {
         public void program() {
             String name = "寫程式";
             System.out.println(name +":"+ this.name);
+            
+            Study study = new Study();
+            study.read();
         }
         
         public void meeting() {
@@ -20,16 +23,17 @@ public class Employee {
     }
     
     // 一般內部類別:
-    class Study {
+    private class Study {
         public void read() {
-            String appName = "美食 App";
+            String appName = "美食 App"; // Java7 要加上 final(不可更改的變數), Java8 則會自動判斷
             int hours = 60;
+            hours = 50;
             System.out.println("進修時間:" + hours + " H");
             
             // 方法內部類別:
             class App {
                 public void printName() {
-                    System.out.println(appName);
+                    System.out.println(appName); // 取用 final 變數
                 }
             }
             
