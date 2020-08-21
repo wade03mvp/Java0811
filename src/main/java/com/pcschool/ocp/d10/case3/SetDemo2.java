@@ -24,13 +24,21 @@ public class SetDemo2 {
         
         // [國文, 100, 英文, 80, 數學, 90] 相當於物件陣列 Object[]
         int sum = 0;
-        iter = set.iterator(); // 第二次尋找要重新設定
+        iter = set.iterator(); // 下一次尋找要重新設定
         while(iter.hasNext()) {         
             Object next = iter.next();
             if(next instanceof Integer){
                 sum += (Integer)next;
             }
         }
+        System.out.println(sum);
+        
+        // Java8
+        // [國文, 100, 英文, 80, 數學, 90] 相當於物件陣列 Object[] 
+        sum = set.stream()
+                .filter(note -> note instanceof Integer)
+                .mapToInt(score -> (Integer)score) // (score -> ((Integer)score).intValue())
+                .sum();
         System.out.println(sum);
     }  
 }
