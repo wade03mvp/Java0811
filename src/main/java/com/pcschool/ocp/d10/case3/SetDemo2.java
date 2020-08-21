@@ -15,12 +15,22 @@ public class SetDemo2 {
         set.add(90);
         System.out.println(set);
         
-        // 尋訪器 (不可逆)
+        // 尋訪器 (不可逆) 遍歷每一個元素
         Iterator iter = set.iterator();
         while(iter.hasNext()) {         // 確認是否有元素? (自動往下尋找)
             Object next = iter.next();  // 取得元素內容
             System.out.println(next);   // 印出元素內容
         }
-        set.iterator(); // 第二次尋找要重新設定
+        
+        // [國文, 100, 英文, 80, 數學, 90] 相當於物件陣列 Object[]
+        int sum = 0;
+        iter = set.iterator(); // 第二次尋找要重新設定
+        while(iter.hasNext()) {         
+            Object next = iter.next();
+            if(next instanceof Integer){
+                sum += (Integer)next;
+            }
+        }
+        System.out.println(sum);
     }  
 }
