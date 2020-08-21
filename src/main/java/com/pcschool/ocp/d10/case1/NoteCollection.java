@@ -1,5 +1,6 @@
 package com.pcschool.ocp.d10.case1;
 
+// 單向鏈結 Set
 public class NoteCollection {
     public static void main(String[] args) {
         Note n3 = new Note(80);
@@ -9,5 +10,6 @@ public class NoteCollection {
         System.out.println(n1.getData());
         System.out.println(n1.getNextNode().getData());
         System.out.println(n1.getNextNode().getNextNode().getData());
+        System.out.println(n2);
     }
 }
