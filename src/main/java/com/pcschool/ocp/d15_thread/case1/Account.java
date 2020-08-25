@@ -20,7 +20,8 @@ public class Account {
         current_balance = current_balance - money;
         // 進行提款程序
         if (current_balance >= 0) { // 餘額充足,可以提領
-            System.out.printf("%s 提款 %d 成功, 帳戶餘額 %d\n", tName, money, balance); // 最新餘額寫入 balance
+            balance = current_balance; // 將最新餘額寫入 balance
+            System.out.printf("%s 提款 %d 成功, 帳戶餘額 %d\n", tName, money, balance); 
         } else {
             System.out.printf("%s 提款 %d 失敗, 帳戶餘額 %d\n", tName, money, balance);
         }
